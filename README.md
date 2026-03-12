@@ -38,17 +38,19 @@ No arquivo `appsettings.json` do projeto **API**, ajuste a connection string:
 ## 2. Migrations
 Execute o comando abaixo na raiz da solução para criar a estrutura do banco de dados automaticamente:
 ```bash
-dotnet ef database update --project Infrastructure --startup-project API´´´
+dotnet ef database update --project Infrastructure --startup-project API
+```
 
 ### 3. Execução
 Para rodar a aplicação, utilize o comando:
 
 ```bash
-dotnet run --project API´´´
+dotnet run --project API
+```
 
 ## Após iniciar, acesse a documentação interativa pelo Swagger no endereço:
-```https://localhost:[PORTA]/swaggerv´´´
-
+```https://localhost:[PORTA]/swaggerv
+```
 
 ### 🧪 Testes Automatizados
 O projeto conta com uma suíte de testes que cobre:
@@ -60,7 +62,8 @@ Testes de Integração: Persistência real em banco de dados utilizando SQLite I
 Para rodar os testes:
 
 ```Bash
-dotnet test´´´
+dotnet test
+```
 
 ### 📌 Regras de Negócio Implementadas
 Cálculo Dinâmico: O tempo de assinatura é calculado em tempo de execução e nunca retorna 0.
