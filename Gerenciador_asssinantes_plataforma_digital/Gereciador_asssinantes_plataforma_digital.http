@@ -1,0 +1,6 @@
+@Gerenciador_asssinantes_plataforma_digital_HostAddress = http://localhost:5009
+
+GET {{Gerenciador_asssinantes_plataforma_digital_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
