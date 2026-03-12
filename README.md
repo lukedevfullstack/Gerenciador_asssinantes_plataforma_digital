@@ -31,7 +31,7 @@ No arquivo `appsettings.json` do projeto **API**, ajuste a connection string:
 "ConnectionStrings": {
   "DefaultConnection": "Server=localhost;Port=3306;Database=SubscriberDB;Uid=seu_usuario;Pwd=sua_senha;"
 }
-
+```
 
 ### ⚙️ Configuração e Execução
 
