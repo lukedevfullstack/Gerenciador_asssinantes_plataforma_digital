@@ -40,6 +40,7 @@ Execute o comando abaixo na raiz da solução para criar a estrutura do banco de
 ```bash
 dotnet ef database update --project Infrastructure --startup-project API
 ```
+Ou execute o script Script.sql que está no repositório no banco MySql.
 
 ### 3. Execução
 Para rodar a aplicação, utilize o comando:
