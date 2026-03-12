@@ -1,0 +1,1 @@
+# Gereciador_asssinantes_plataforma_digital
