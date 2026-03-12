@@ -1,5 +1,5 @@
 ﻿using Gerenciador_asssinantes_plataforma_digital.Domain.Entities;
-using Gerenciador_asssinantes_plataforma_digital.Domain.Interfaces;
+using Gerenciador_asssinantes_plataforma_digital.Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gerenciador_asssinantes_plataforma_digital.Infrastructure.Repositories
@@ -27,7 +27,7 @@ namespace Gerenciador_asssinantes_plataforma_digital.Infrastructure.Repositories
         public async Task<IEnumerable<Subscriber>> GetAllActiveAsync()
         {
             return await _context.Subscribers
-                .Where(s => s.IsActive)
+                .Where(s => s.IsActive).AsNoTracking()
                 .ToListAsync();
         }
 

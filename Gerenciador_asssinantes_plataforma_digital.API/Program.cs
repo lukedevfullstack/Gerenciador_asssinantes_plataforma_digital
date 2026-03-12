@@ -1,8 +1,6 @@
 using Gerenciador_asssinantes_plataforma_digital.Application.Interfaces;
 using Gerenciador_asssinantes_plataforma_digital.Application.Services;
-using Gerenciador_asssinantes_plataforma_digital.Domain.Interfaces;
 using Gerenciador_asssinantes_plataforma_digital.Infrastructure;
-using Gerenciador_asssinantes_plataforma_digital.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System.Text.Json.Serialization;
 
@@ -14,7 +12,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
 // 2. Dependency Injection Mapping
-builder.Services.AddScoped<ISubscriberRepository, SubscriberRepository>();
 builder.Services.AddScoped<ISubscriberService, SubscriberService>();
 
 // 3. Controller Configuration with Enum-to-String conversion
@@ -28,6 +25,7 @@ builder.Services.AddControllers()
 // 4. Swagger/OpenAPI Setup
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddInfrastructure();
 
 var app = builder.Build();
 

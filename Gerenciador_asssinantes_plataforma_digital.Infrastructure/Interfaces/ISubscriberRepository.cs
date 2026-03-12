@@ -1,6 +1,6 @@
 ﻿using Gerenciador_asssinantes_plataforma_digital.Domain.Entities;
 
-namespace Gerenciador_asssinantes_plataforma_digital.Domain.Interfaces
+namespace Gerenciador_asssinantes_plataforma_digital.Infrastructure.Interfaces
 {
     public interface ISubscriberRepository
     {

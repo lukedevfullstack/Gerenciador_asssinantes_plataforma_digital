@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gerenciador_asssinantes_plataforma_digital.Domain\Gerenciador_asssinantes_plataforma_digital.Domain.csproj" />
+    <ProjectReference Include="..\Gerenciador_asssinantes_plataforma_digital.Infrastructure\Gerenciador_asssinantes_plataforma_digital.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

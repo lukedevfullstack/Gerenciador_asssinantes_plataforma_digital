@@ -2,7 +2,7 @@
 using Gerenciador_asssinantes_plataforma_digital.Application.Services;
 using Gerenciador_asssinantes_plataforma_digital.Domain.Entities;
 using Gerenciador_asssinantes_plataforma_digital.Domain.Enums;
-using Gerenciador_asssinantes_plataforma_digital.Domain.Interfaces;
+using Gerenciador_asssinantes_plataforma_digital.Infrastructure.Interfaces;
 using Moq;
 
 namespace Gerenciador_asssinantes_plataforma_digital.Tests.Application
